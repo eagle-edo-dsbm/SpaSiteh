@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+
+.main{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+main:hover{
+    color: darkblue;
+    transform: translateY(5px) scale(0.95);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.block{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate linear 5s infinite;
+}
+
+@keyframes rotate{
+    0%{background-color: red; transform: translate(-50%, -50%) rotateZ(90deg);}
+    33%{background-color: green; transform: translate(-50%, -50%) rotateZ(180deg);}
+    66%{background-color: blue; transform: translate(-50%, -50%) rotateZ(270deg);}
+    100%{background-color: red; transform: translate(-50%, -50%) rotateZ(360deg);}
+}
